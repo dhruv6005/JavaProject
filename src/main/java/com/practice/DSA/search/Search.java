@@ -1,4 +1,4 @@
-package com.practise.DSA.search;
+package com.practice.DSA.search;
 
 public class Search {
 

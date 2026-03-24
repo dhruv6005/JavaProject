@@ -1,4 +1,4 @@
-package com.practise.string;
+package com.practice.string;
 
 public class Employee implements Comparable<Employee> {
 

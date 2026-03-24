@@ -1,4 +1,4 @@
-package com.practise.leetCode;
+package com.practice.leetCode;
 
 /*
 2535. Difference Between Element Sum and Digit Sum of an Array

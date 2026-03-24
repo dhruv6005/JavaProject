@@ -1,4 +1,4 @@
-package com.practise.multiThreading;
+package com.practice.multiThreading;
 
 public class DeadLockThread {
     public static void main(String[] args) {

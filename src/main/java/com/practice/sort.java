@@ -1,6 +1,6 @@
-package com.practise;
+package com.practice;
 
-import com.practise.string.Employee;
+import com.practice.string.Employee;
 
 import java.util.ArrayList;
 import java.util.Comparator;

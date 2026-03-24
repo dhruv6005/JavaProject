@@ -1,4 +1,4 @@
-package com.practise.arrayPrograms;
+package com.practice.arrayPrograms;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
