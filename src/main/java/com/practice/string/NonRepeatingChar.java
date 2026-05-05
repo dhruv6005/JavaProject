@@ -13,17 +13,22 @@ public class NonRepeatingChar {
     }
 
     private static char firstNonRepeatingChar(String str) {
-        Map<Character, Integer> charCount = new HashMap<>();
+//        Map<Character, Integer> charCount = new HashMap<>();
+//
+//        for (char c : str.toCharArray()) {
+//            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+//        }
+//
+//        for (Map.Entry<Character, Integer> entrySet : charCount.entrySet()) {
+//            if (entrySet.getValue() == 1) {
+//                return entrySet.getKey();
+//            }
+//        }
 
-        for (char c : str.toCharArray()){
-            charCount.put(c, charCount.getOrDefault(c,0)+1);
-        }
-
-        for (Map.Entry<Character, Integer> entrySet : charCount.entrySet()){
-            if (entrySet.getValue() == 1){
-                return entrySet.getKey();
-            }
-        }
+        Character character = str.chars().mapToObj(c -> (char) c)
+                .filter(c -> str.indexOf(c) == str.lastIndexOf(c)).findFirst().orElseGet(null);
+        if (character != null)
+            return character;
         return 0;
     }
 }
